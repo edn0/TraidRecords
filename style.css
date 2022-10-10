@@ -1,0 +1,113 @@
+body {
+    background-color: #333;
+    font-family: "Roboto", sans-serif;
+    color: aliceblue;
+    margin: 0;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+
+
+#header {
+    display: flex;
+    flex-direction: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 220px;
+    width: auto;
+
+    margin: 0px;
+    border-radius: 0px 0px 10px 10px;
+    background-color: rgba(255, 0, 0, 0.5);
+}
+
+
+
+#header_left {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-end;
+}
+
+
+#header_left_top {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+#header_left_bottom {
+    margin-right: -92px;
+}
+
+#logo {
+    margin-top: -176px;
+    margin-bottom: -190px;
+}
+
+.page_link {
+}
+
+
+
+
+#header_right {
+    display: flex;
+    flex-flow: column nowrap;
+    color: red;
+    margin-right: 20px;
+}
+
+.socials {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+
+
+
+
+/*****************************************/
+/**************** Intro *****************/
+/***************************************/
+
+#introduction {
+    background-color: aliceblue;
+    border-radius: 8px;
+    color: black;
+    padding: 10px;
+    margin: 24px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/****************************************************************/
+/***************** Misc *****************************************/
+/****************************************************************/
+
+a {
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 20px;
+}
+
+a:hover {
+    color: #5865F2;
+}
