@@ -122,7 +122,8 @@ h1 {
 }
 
 #next_event {
-    flex-grow: 2;
+    flex-grow: 3;
+    
 }
 
 .event {
@@ -130,7 +131,6 @@ h1 {
     color: black;
     border-radius: 12px;
     padding: 8px;
-
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
@@ -145,17 +145,32 @@ h1 {
     font-style: italic;
 }
 
-.event_name {
+.event_title {
     font-size: 24px;
 }
 
+.event_photo {
+    margin: 4px;
+}
+
+
+
 .event_artists {
     text-decoration: underline;
+    font-size: 32px;
 }
+
+.event_details {
+    text-align: center;
+}
+
 #later_events {
     display: flex;
     flex-flow: column nowrap;
     gap: 10px;
+    flex-grow: 0;
+    flex-basis: 0;
+
 }
 
 
