@@ -17,19 +17,28 @@ h1 {
     align-items: center;
     justify-content: space-between;
 
-    height: 220px;
+    height: 120px;
     width: auto;
 
     margin: 0px;
     border-radius: 0px 0px 10px 10px;
     background-color: rgba(255, 0, 0, 0.5);
+
+    transition: all 250ms ease-in-out;
 }
 
+#header:hover {
+    height: 240px;
+}
 
+#header:hover #logo {
+    height: 320px;
+    margin: 0;
+}
 
 #header_left {
     display: flex;
-    flex-flow: column;
+    flex-flow: row;
     align-items: flex-end;
 }
 
@@ -48,9 +57,12 @@ h1 {
 }
 
 #logo {
-    margin-top: -140px;
-    margin-bottom: -190px;
+    transition: all 250ms ease-in-out;
+    margin: 80px;
+    height: 160px;
 }
+
+
 
 .page_link {
     margin-right: 10px;
@@ -147,6 +159,7 @@ h1 {
 
 .event_title {
     font-size: 24px;
+    margin: 8px;
 }
 
 .event_photo {
@@ -158,6 +171,7 @@ h1 {
 .event_artists {
     text-decoration: underline;
     font-size: 32px;
+    margin: 8px;
 }
 
 .event_details {
@@ -172,6 +186,45 @@ h1 {
     flex-basis: 0;
 
 }
+
+/****************************************************************/
+
+
+#frame_tarifs {
+    background-color: white;
+    border-radius: 12px;
+    padding: 8px;
+    margin: 8px;
+
+    font-size: 20px;
+}
+
+#frame_boissons {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+
+}
+
+thead {
+    line-height: 2;
+    color:rgba(255, 0, 0, 0.5);
+    font-size: 24px;
+}
+table {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    border: 2px solid rgba(255, 0, 0, 0.5);
+    border-radius: 12px;
+    margin: 8px;
+    padding: 4px;
+    line-height: 1.4;
+}
+
+
+
+/****************************************************************/
 
 
 
