@@ -1,4 +1,6 @@
 let events = [];
+let employees_list = [];
+
 
 class Event {
     constructor (date, localisation, title, photo, artists, details) {
@@ -59,7 +61,9 @@ function display_employees() {
 
 }
 
-create_events("Dimanche 16 Octobre 2022", "Triad Records", "Concert Triad", "../img/bg.jpg", "Polaire, Edno & more","Premier concert au Triad depuis la réouverture. Les anciens du Triad et les nouvelles têtes vont tout retourner ce soir dans la salle de concert du Triad.");
+
+
+create_events("Dimanche 16 Octobre 2022 21:00", "Triad Records", "Concert Triad", "../img/bg.jpg", "Polaire, Edno, Le Loup & DJ sets","Premier concert au Triad depuis la réouverture. Les anciens du Triad et les nouvelles têtes vont tout retourner ce soir dans la salle de concert du Triad.");
 
 
 

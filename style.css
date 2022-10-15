@@ -1,6 +1,7 @@
 body {
     background-color: #333;
-    font-family: "Roboto", sans-serif;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
     color: aliceblue;
     margin: 0;
 }
@@ -188,6 +189,48 @@ h1 {
 }
 
 /****************************************************************/
+/****************************************************************/
+#photo_frames_container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#photo_frames {
+    width: fit-content;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    padding: 12px;
+    border-radius: 12px;
+    margin: 8px;
+    gap: 8px;
+}
+
+
+
+.photo_frame {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    background-color: rgba(120, 10, 10, 1);
+    color: white;
+    padding: 8px;
+    border-radius: 12px;
+}
+.photo {
+    width: 720px;
+    border: 24px solid white;
+    margin: 12px;
+}
+
+
+/****************************************************************/
+/****************************************************************/
 
 
 #frame_tarifs {
@@ -212,7 +255,6 @@ thead {
     line-height: 2;
     color:rgb(255, 0, 0);
     font-size: 24px;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
 table {
