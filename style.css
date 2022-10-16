@@ -287,6 +287,7 @@ table {
     justify-content: center;
     align-items: center;
     gap: 8px;
+    flex-flow: row wrap;
 }
 
 .employee_frame {
@@ -294,14 +295,16 @@ table {
     align-items: center;
     flex-flow: column;
     width: 300px;
-    height: 500px;
+    height: fit-content;
     background-color: white;
     border-radius: 12px;
     color: black;
+    padding: 8px;
 }
 
 .employee_name {
     font-size: 22px;
+    font-weight: bold;
 }
 
 

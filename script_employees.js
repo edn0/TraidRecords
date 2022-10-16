@@ -4,19 +4,31 @@ let employees_list = [];
 
 
 let employee_names = [
-    "Guillaume Winshester"
+    "Guillaume Winshester",
+    "Camelia G",
+    "Evan",
+    "Edouard Know"
 ]
 
 let employee_descriptions = [
-    "Big entrepreneur"
+    "Big entrepreneur",
+    "Charbonneuse",
+    "Scrappy",
+    "Edno multi-casquettes"
 ]
 
 let employee_titles = [
-    "CEO"
+    "Directeur",
+    "Co-Directrice",
+    "Rappeur",
+    "Rappeur"
 ]
 
 let employee_photos = [
-    "./img/employees/guillaume.jpg"
+    "https://edn0.github.io/TriadRecords/img/employees/guillaume.png",
+    "https://edn0.github.io/TriadRecords/img/employees/camelia.png",
+    "https://edn0.github.io/TriadRecords/img/employees/evan.jpg",
+    "https:/:edn0.github.io/TriadRecords/img/employees/edno.jpg"
 ]
 
 function display_employees() {
