@@ -10,7 +10,8 @@ let employee_names = [
     "Edouard Know",
     "Curtis Jackson",
     "Hichem",
-    "Danzo Delaveras"
+    "Danzo Delaveras",
+    "Gueseppe"
 ]
 
 let employee_descriptions = [
@@ -20,7 +21,8 @@ let employee_descriptions = [
     "Edno multi-casquettes",
     "Big Curtis dans cette shit",
     "Grosse voix gros bras",
-    "Tu connais déjà"
+    "Tu connais déjà",
+    "Polaire, légendaire"
 ]
 
 let employee_titles = [
@@ -30,7 +32,8 @@ let employee_titles = [
     "Rappeur",
     "Chef Sécurité",
     "Agent de Sécurité",
-    "Agent de Sécurité"
+    "Agent de Sécurité",
+    "Chanteur & DJ"
 ]
 
 let employee_photos = [
@@ -40,7 +43,8 @@ let employee_photos = [
     "https://edn0.github.io/TriadRecords/img/employees/edno.jpg",
     "https://edn0.github.io/TriadRecords/img/employees/curtis.png",
     "https://edn0.github.io/TriadRecords/img/employees/hichem.jpg",
-    "https://edn0.github.io/TriadRecords/img/employees/danzo.jpg"
+    "https://edn0.github.io/TriadRecords/img/employees/danzo.jpg",
+    "https://edn0.github.io/TriadRecords/img/employees/diego.jpg"
 ]
 
 function display_employees() {
