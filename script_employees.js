@@ -7,28 +7,40 @@ let employee_names = [
     "Guillaume Winshester",
     "Camelia G",
     "Evan",
-    "Edouard Know"
+    "Edouard Know",
+    "Curtis Jackson",
+    "Hichem",
+    "Danzo Delaveras"
 ]
 
 let employee_descriptions = [
     "Big entrepreneur",
     "Charbonneuse",
     "Scrappy",
-    "Edno multi-casquettes"
+    "Edno multi-casquettes",
+    "Big Curtis dans cette shit",
+    "Grosse voix gros bras",
+    "Tu connais déjà"
 ]
 
 let employee_titles = [
     "Directeur",
     "Co-Directrice",
     "Rappeur",
-    "Rappeur"
+    "Rappeur",
+    "Chef Sécurité",
+    "Agent de Sécurité",
+    "Agent de Sécurité"
 ]
 
 let employee_photos = [
     "https://edn0.github.io/TriadRecords/img/employees/guillaume.png",
     "https://edn0.github.io/TriadRecords/img/employees/camelia.jpg",
     "https://edn0.github.io/TriadRecords/img/employees/evan.jpg",
-    "https://edn0.github.io/TriadRecords/img/employees/edno.jpg"
+    "https://edn0.github.io/TriadRecords/img/employees/edno.jpg",
+    "https://edn0.github.io/TriadRecords/img/employees/curtis.jpg",
+    "https://edn0.github.io/TriadRecords/img/employees/hichem.jpg",
+    "https://edn0.github.io/TriadRecords/img/employees/danzo.jpg"
 ]
 
 function display_employees() {
@@ -38,7 +50,7 @@ function display_employees() {
         employees.push(new Employee(employee_names[i], employee_photos[i], employee_titles[i], employee_descriptions[i]));
         document.getElementsByClassName("employee_name")[i].innerHTML = employees[i].name;
         document.getElementsByClassName("employee_photo")[i].src = employees[i].photo;
-        document.getElementsByClassName("employee_photo")[i].width = 240;
+        document.getElementsByClassName("employee_photo")[i].width = 260;
         document.getElementsByClassName("employee_title")[i].innerHTML = employees[i].title;
         document.getElementsByClassName("employee_description")[i].innerHTML = employees[i].description;
     }
