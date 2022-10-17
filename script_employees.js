@@ -26,9 +26,9 @@ let employee_titles = [
 
 let employee_photos = [
     "https://edn0.github.io/TriadRecords/img/employees/guillaume.png",
-    "https://edn0.github.io/TriadRecords/img/employees/camelia.png",
+    "https://edn0.github.io/TriadRecords/img/employees/camelia.jpg",
     "https://edn0.github.io/TriadRecords/img/employees/evan.jpg",
-    "https:/:edn0.github.io/TriadRecords/img/employees/edno.jpg"
+    "https://edn0.github.io/TriadRecords/img/employees/edno.jpg"
 ]
 
 function display_employees() {
