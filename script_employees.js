@@ -11,7 +11,8 @@ let employee_names = [
     "Curtis Jackson",
     "Hichem",
     "Danzo Delaveras",
-    "Gueseppe"
+    "Gueseppe",
+    "Le Loup"
 ]
 
 let employee_descriptions = [
@@ -22,7 +23,8 @@ let employee_descriptions = [
     "Big Curtis dans cette shit",
     "Grosse voix gros bras",
     "Tu connais déjà",
-    "Polaire, légendaire"
+    "Polaire, légendaire",
+    "Big W"
 ]
 
 let employee_titles = [
@@ -33,7 +35,8 @@ let employee_titles = [
     "Chef Sécurité",
     "Agent de Sécurité",
     "Agent de Sécurité",
-    "Chanteur & DJ"
+    "Chanteur & DJ",
+    "Rappeur"
 ]
 
 let employee_photos = [
