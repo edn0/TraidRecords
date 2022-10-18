@@ -44,7 +44,8 @@ let employee_photos = [
     "https://edn0.github.io/TriadRecords/img/employees/curtis.png",
     "https://edn0.github.io/TriadRecords/img/employees/hichem.jpg",
     "https://edn0.github.io/TriadRecords/img/employees/danzo.jpg",
-    "https://edn0.github.io/TriadRecords/img/employees/diego.jpg"
+    "https://edn0.github.io/TriadRecords/img/employees/diego.jpg",
+    "https://edn0.github.io/TriadRecords/img/employees/leloup.jpg"
 ]
 
 function display_employees() {
