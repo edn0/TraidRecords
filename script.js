@@ -65,3 +65,28 @@ create_events(
         );
 
 display_events();
+
+
+async function get_players() {
+    
+    let rep = await fetch("https://servers-frontend.fivem.net/api/servers/single/q8538p", {
+        "credentials": "omit",
+        "headers": {
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:106.0) Gecko/20100101 Firefox/106.0",
+            "Accept": "*/*",
+            "Accept-Language": "fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3",
+            "Sec-Fetch-Dest": "empty",
+            "Sec-Fetch-Mode": "cors",
+            "Sec-Fetch-Site": "cross-site"
+        },
+        "referrer": "https://shop.unityrp.io/",
+        "method": "GET",
+        "mode": "cors"
+    });
+
+    let data = await rep.json();
+    console.table(data);
+}
+
+
+get_players();
