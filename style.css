@@ -130,10 +130,21 @@ h1 {
 /***************************************************************/
 #event_list {
     display: flex;
+    flex-flow: column wrap;
     justify-content: space-evenly;
     gap: 24px;
     margin: 20px 10px 0 10px;
 }
+
+@media (max-width: 600px) {
+    #event_list {
+      width: 400px;
+    }
+
+    #event_list img {
+        width: 300px;
+    }
+  }
 
 #next_event {
     flex-grow: 3;
@@ -148,6 +159,7 @@ h1 {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
+    text-align: center;
 }
 
 
