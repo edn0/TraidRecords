@@ -198,6 +198,20 @@ h1 {
     justify-content: center;
 }
 
+@media (max-width: 600px) {
+    #photo_frames_container {
+      width: 400px;
+    }
+
+    #photo_frames img {
+        width: 360px;
+        border: 8px solid white;
+    }
+
+
+
+  }
+
 #photo_frames {
     width: fit-content;
     display: flex;
