@@ -11,7 +11,7 @@ let employee_names = [
 //    "Curtis Jackson",
     "Hichem",
     "Danzo Delaveras",
-    "Gueseppe",
+    "Polaire",
     "Le Loup",
     "Diego"
 ]
@@ -23,8 +23,8 @@ let employee_descriptions = [
     "Edno multi-casquettes",
 //    "Big Curtis dans cette shit",
     "Grosse voix gros bras",
-    "Tu connais déjà",
-    "Polaire, légendaire",
+    "Le boug est sérieux",
+    "Légendaire",
     "Big W",
     "L'agent fou furieux"
 ]
