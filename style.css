@@ -278,7 +278,8 @@ h1 {
 
 
 #frame_tarifs {
-    background-color: rgba(255, 255, 255, 0.514);
+    background-image: url(https://edn0.github.io/TriadRecords/img/concert_triad.jpg);
+    background-position: center;
     border-radius: 12px;
     padding: 8px;
     margin: 8px;
@@ -290,7 +291,7 @@ h1 {
 
 #frame_boissons {
     display: flex;
-    flex-flow: row;
+    flex-flow: row wrap;
     justify-content: center;
 
 }
@@ -302,7 +303,7 @@ thead {
 }
 
 table {
-    background-color: #333;
+    background-color: rgba(34, 34, 34, 0.849);
     color: white;
     text-align: center;
     border-radius: 12px;
