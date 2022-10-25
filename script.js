@@ -47,22 +47,21 @@ function display_events() {
 
 create_events(
 
-    "Jeudi 20 Octobre 2022 21:00",
-    "Triad Records",
-    "Concert Triad", "../img/bg.jpg",
-    "Polaire, Edno, Le Loup & DJ sets",
-    "Concert tranquille avant le bordel ce week-end"
+    "Samedi 29 Octobre 2022",
+    "Amphithéâtre",
+    "Concert Triad", "../img/concert_amphi.jpg",
+    "Polaire, Edno & more",
+    "Premier concert à l'amphi depuis la reformation du Triad"
       );
 
 
 create_events(
 
-    "Vendredi 21 Octobre 2022 21:00",
+    "Dimanche 30 Octobre 2022 21:00",
     "Triad Records",
     "Concert Triad", "../img/bg.jpg",
-    "Polaire, Edno, Le Loup & DJ sets",
-    "Concert tranquille avant le bordel ce week-end"
+    "Toute l'équipe du Triad",
+    "Concert tranquille après le gros concert de l'amphi"
         );
 
 display_events();
-
