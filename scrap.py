@@ -26,6 +26,7 @@ output = data["Data"]["clients"]
 os.system("cls")
 
 print(output)
-
+counter = 0
 for i in data["Data"]["players"]:
-    print(i["name"])
+    counter = counter + 1
+    print("🎮 " + "Joueur " + str(counter) + ": " + i["name"])
