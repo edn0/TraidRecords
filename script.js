@@ -64,4 +64,12 @@ create_events(
     "Concert tranquille après le gros concert de l'amphi"
         );
 
+create_events(
+    "Samedi 12 Novembre 2022 19:00 - 1:00",
+    "Observatoire",
+    "Concert Triad", "../img/bg.jpg",
+    "",
+    "Venez profiter de la vue sur la ville en écoutant les meilleurs sons du Triad"
+)
+
 display_events();
