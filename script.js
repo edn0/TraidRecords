@@ -44,32 +44,16 @@ function display_events() {
 
     }
 }
-
 create_events(
 
-    "Samedi 29 Octobre 2022",
-    "Amphithéâtre",
-    "Concert Triad", "../img/concert_amphi.jpg",
-    "Polaire, Edno & more",
-    "Premier concert à l'amphi depuis la reformation du Triad"
+    "Samedi 12 Novembre 19:00 - 1:00",
+    "Observatoire",
+    "Event Triad", "../img/bg.jpg",
+    "DJ Patate Douce, Edno, Polaire & more",
+    "Tombola, venez prendre vos tickets au Triad. Un véhicule mystère à gagner !"
       );
 
 
-create_events(
-
-    "Dimanche 30 Octobre 2022 21:00",
-    "Triad Records",
-    "Concert Triad", "../img/bg.jpg",
-    "Toute l'équipe du Triad",
-    "Concert tranquille après le gros concert de l'amphi"
-        );
-
-create_events(
-    "Samedi 12 Novembre 2022 19:00 - 1:00",
-    "Observatoire",
-    "Concert Triad", "../img/bg.jpg",
-    "",
-    "Venez profiter de la vue sur la ville en écoutant les meilleurs sons du Triad"
-)
 
 display_events();
+
