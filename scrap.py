@@ -1,5 +1,8 @@
 import requests
-import os
+import time
+
+proches_name = ["Le Zgaa", "snowreal", "Guillaume Winshester"]
+proches_co = []
 
 headers = {
     'authority': 'servers-frontend.fivem.net',
@@ -21,12 +24,21 @@ response = requests.get('https://servers-frontend.fivem.net/api/servers/single/q
 
 data = response.json()
 
-output = data["Data"]["clients"]
 
-os.system("cls")
-
-print(output)
 counter = 0
 for i in data["Data"]["players"]:
     counter = counter + 1
+
+# check if name is in list
+    if any(i["name"] == c for c in proches_name):
+        print("YOOOOOOOOOOOOOOOOOOOOOOOOOO")
+        proches_co.append(i["name"])
+
+
+
+    # time.sleep(0.02)
     print("🎮 " + "Joueur " + str(counter) + ": " + i["name"])
+
+print("❤️ Proches connectés : " + str(len(proches_co)))
+for i in proches_co:
+    print(i)
