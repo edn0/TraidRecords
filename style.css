@@ -252,11 +252,7 @@ h1 {
     transition: 200ms ease-in-out;
 }
 
-.photo_frame:hover {
-    box-shadow: 0px 0px 10px 10px rgb(255, 0, 0);
-    -webkit-box-shadow: 0px 0px 10px 10px rgb(255, 0, 0);
-    -moz-box-shadow: 0px 0px 10px 10px rgb(255, 0, 0);
-}
+
 .photo {
     width: 720px;
     border: 24px solid white;
