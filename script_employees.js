@@ -13,7 +13,9 @@ let employee_names = [
     "Danzo Delaveras",
     "Polaire",
     "Le Loup",
-    "Diego"
+    "Diego",
+    "Georges Porraux",
+    "DJ Patate"
 ]
 
 let employee_descriptions = [
@@ -26,7 +28,10 @@ let employee_descriptions = [
     "Le boug est sérieux",
     "Légendaire",
     "Big W",
-    "L'agent fou furieux"
+    "L'agent fou furieux",
+    "Sorti de la jungle",
+    "s/o la patate douce"
+
 ]
 
 let employee_titles = [
@@ -39,7 +44,9 @@ let employee_titles = [
     "Agent de Sécurité",
     "Chanteur & DJ",
     "Rappeur",
-    "Agent de sécurité"
+    "Agent de sécurité",
+    "Directeur artistique",
+    "DJ"
 ]
 
 let employee_photos = [
@@ -52,7 +59,9 @@ let employee_photos = [
     "https://edn0.github.io/TriadRecords/img/employees/danzo.jpg",
     "https://edn0.github.io/TriadRecords/img/employees/polaire.PNG",
     "https://edn0.github.io/TriadRecords/img/employees/leloup.jpg",
-    "https://edn0.github.io/TriadRecords/img/employees/diego.jpg"
+    "https://edn0.github.io/TriadRecords/img/employees/diego.jpg",
+    "https://edn0.github.io/TriadRecords/img/employees/georges.PNG",
+    "https://edn0.github.io/TriadRecords/img/employees/clement.PNG"
 
 
 ]
