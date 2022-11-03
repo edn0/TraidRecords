@@ -336,7 +336,9 @@ table {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 12px;
+    margin: 32px;
+    margin-bottom: 64px;
+
 }
 #employees {
     display: flex;
@@ -352,11 +354,11 @@ table {
     flex-flow: column;
     width: 300px;
     height: fit-content;
-    background: linear-gradient(45deg, #333, rgba(255, 0, 0, 0.3),rgba(255, 0, 0, 0.5), rgba(255, 0, 0, 0.7), black);
+    background: linear-gradient(45deg, #333, rgba(200, 0, 0, 0.3),rgba(200, 0, 0, 0.5), rgba(200, 0, 0, 0.7), black);
     background-size: 500%;
     background-position: left;
-    border-radius: 12px;
-    color: black;
+    border-radius: 22px;
+    color: white;
     padding: 8px;
     transition: 300ms ease-in-out;
 }

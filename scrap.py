@@ -1,7 +1,7 @@
 import requests
 import time
 
-proches_name = ["Le Zgaa", "snowreal", "Guillaume Winshester", "DEX", "Kops", "[A]*"]
+proches_name = ["Le Zgaa", "snowreal", "Guillaume Winshester", "DEX", "Kops", "Uryuka"]
 proches_co = []
 
 headers = {
