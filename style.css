@@ -252,6 +252,10 @@ h1 {
     transition: 200ms ease-in-out;
 }
 
+.photo_frame:hover {
+    background-color: transparent;
+}
+
 
 .photo {
     width: 720px;
