@@ -1,7 +1,7 @@
 import requests
 import time
 
-proches_name = ["Le Zgaa", "snowreal", "Guillaume Winshester"]
+proches_name = ["Le Zgaa", "snowreal", "Guillaume Winshester", "DEX", "Kops", "[A]*"]
 proches_co = []
 
 headers = {
@@ -35,8 +35,7 @@ for i in data["Data"]["players"]:
         proches_co.append(i["name"])
 
 
-
-    # time.sleep(0.02)
+    time.sleep(0.02)
     print("🎮 " + "Joueur " + str(counter) + ": " + i["name"])
 
 print("❤️ Proches connectés : " + str(len(proches_co)))
