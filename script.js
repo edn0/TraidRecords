@@ -46,9 +46,9 @@ function display_events() {
 }
 create_events(
 
-    "Samedi 12 Novembre 19:00 - 1:00",
+    "Samedi 12 Novembre 11:00 - 02:00",
     "Observatoire",
-    "Event Triad", "../img/bg.jpg",
+    "Event Triad toute la journée", "../img/bg.jpg",
     "DJ Patate Douce, Edno, Polaire & plus",
     "Journée open-mic, DJ sets, chant : il y en a pour tout le monde. Le Triad vous attend nombreux afin de découvrir vos talents cachés pour la musique."
       );
