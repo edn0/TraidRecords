@@ -49,8 +49,8 @@ create_events(
     "Samedi 12 Novembre 19:00 - 1:00",
     "Observatoire",
     "Event Triad", "../img/bg.jpg",
-    "DJ Patate Douce, Edno, Polaire & more",
-    "Tombola, venez prendre vos tickets au Triad. Un véhicule mystère à gagner !"
+    "DJ Patate Douce, Edno, Polaire & plus",
+    "Journée open-mic, DJ sets, chant : il y en a pour tout le monde. Le Triad vous attend nombreux afin de découvrir vos talents cachés pour la musique."
       );
 
 
