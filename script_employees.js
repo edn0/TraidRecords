@@ -6,8 +6,8 @@ let employees_list = [];
 let employee_names = [
     "Guillaume Winshester",
     "Camelia G",
-    "Evan",
-    "Edouard Know",
+    "Dex Lightyear",
+    "Ed' Know",
 //    "Curtis Jackson",
     "Hichem",
     "Danzo Delaveras",
@@ -21,7 +21,7 @@ let employee_names = [
 let employee_descriptions = [
     "Big entrepreneur",
     "Charbonneuse",
-    "Scrappy",
+    "Real OG moulaga",
     "Edno multi-casquettes",
 //    "Big Curtis dans cette shit",
     "Grosse voix gros bras",
@@ -37,8 +37,8 @@ let employee_descriptions = [
 let employee_titles = [
     "Directeur",
     "Co-Directrice",
-    "Rappeur",
-    "Rappeur",
+    "Agent de sécurité",
+    "Co-Directeur, Rappeur, DJ",
 //    "Chef Sécurité",
     "Chef de la sécurité",
     "Agent de Sécurité",
@@ -52,7 +52,7 @@ let employee_titles = [
 let employee_photos = [
     "https://edn0.github.io/TriadRecords/img/employees/guillaume.png",
     "https://edn0.github.io/TriadRecords/img/employees/camelia.jpg",
-    "https://edn0.github.io/TriadRecords/img/employees/evan.jpg",
+    "https://edn0.github.io/TriadRecords/img/employees/dex.png",
     "https://edn0.github.io/TriadRecords/img/employees/edno.jpg",
 //    "https://edn0.github.io/TriadRecords/img/employees/curtis.png",
     "https://edn0.github.io/TriadRecords/img/employees/hichem.jpg",
@@ -89,3 +89,12 @@ class Employee {
 }
 
 display_employees();
+
+
+let employes_co = fetch("../proches.json")
+  .then(response => {
+  return response.json();
+})
+ .then(jsondata => console.log(jsondata));
+
+console.log(employes_co);
