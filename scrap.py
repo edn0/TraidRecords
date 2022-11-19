@@ -1,8 +1,21 @@
 import requests
 import time
 
-proches_name = ["Le Zgaa", "snowreal", "Guillaume Winshester", "DEX", "Kops", "Uryuka"]
+proches_name = {
+    "edno":"Moi",
+    "Le Zgaa":"Sgamy",
+    "snowreal":"Le tit-pe qui kiff white",
+    "Guillaume Winshester":"Guigui",
+    "DEX":"Dex",
+    "Kops":"Diego?",
+    "Uryuka":"Danzo",
+    "laucl":"Georges",
+    "(GOUV) [Chargé-Event] Synops Phala": "Synops" }
+
 proches_co = []
+
+proches = []
+
 
 headers = {
     'authority': 'servers-frontend.fivem.net',
@@ -32,12 +45,11 @@ for i in data["Data"]["players"]:
 # check if name is in list
     if any(i["name"] == c for c in proches_name):
         print("YOOOOOOOOOOOOOOOOOOOOOOOOOO")
-        proches_co.append(i["name"])
-
-
+        proches_co.append(proches_name[i["name"]])
     time.sleep(0.02)
     print("🎮 " + "Joueur " + str(counter) + ": " + i["name"])
 
 print("❤️ Proches connectés : " + str(len(proches_co)))
+
 for i in proches_co:
     print(i)
