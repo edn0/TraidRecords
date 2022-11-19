@@ -1,20 +1,20 @@
 import requests
 import time
+import json
 
 proches_name = {
     "edno":"Moi",
-    "Le Zgaa":"Sgamy",
-    "snowreal":"Le tit-pe qui kiff white",
+    "Le Zgaa":"Zga",
     "Guillaume Winshester":"Guigui",
     "DEX":"Dex",
-    "Kops":"Diego?",
+    "Kops":"Diego",
     "Uryuka":"Danzo",
     "laucl":"Georges",
     "(GOUV) [Chargé-Event] Synops Phala": "Synops" }
 
-proches_co = []
+proches_co = [] # list qui reçoit les noms personnalisés des collègues
 
-proches = []
+
 
 
 headers = {
@@ -46,10 +46,20 @@ for i in data["Data"]["players"]:
     if any(i["name"] == c for c in proches_name):
         print("YOOOOOOOOOOOOOOOOOOOOOOOOOO")
         proches_co.append(proches_name[i["name"]])
-    time.sleep(0.02)
+    # time.sleep(0.02)
     print("🎮 " + "Joueur " + str(counter) + ": " + i["name"])
 
 print("❤️ Proches connectés : " + str(len(proches_co)))
 
 for i in proches_co:
     print(i)
+
+
+def write_to_json(proches_co):
+    
+    with open("proches.json", "r+") as f:
+        f.truncate(0)
+    with open("proches.json", "w") as file:
+        json.dump(proches_co, file)
+
+write_to_json(proches_co)
