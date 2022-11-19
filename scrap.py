@@ -1,8 +1,21 @@
 import requests
 import time
+import json
 
-proches_name = ["Le Zgaa", "snowreal", "Guillaume Winshester", "DEX", "Kops", "Uryuka"]
-proches_co = []
+proches_name = {
+    "edno":"Moi",
+    "Le Zgaa":"Zga",
+    "Guillaume Winshester":"Guigui",
+    "DEX":"Dex",
+    "Kops":"Diego",
+    "Uryuka":"Danzo",
+    "laucl":"Georges",
+    "(GOUV) [Chargé-Event] Synops Phala": "Synops" }
+
+proches_co = [] # list qui reçoit les noms personnalisés des collègues
+
+
+
 
 headers = {
     'authority': 'servers-frontend.fivem.net',
@@ -32,12 +45,21 @@ for i in data["Data"]["players"]:
 # check if name is in list
     if any(i["name"] == c for c in proches_name):
         print("YOOOOOOOOOOOOOOOOOOOOOOOOOO")
-        proches_co.append(i["name"])
-
-
-    time.sleep(0.02)
+        proches_co.append(proches_name[i["name"]])
+    # time.sleep(0.02)
     print("🎮 " + "Joueur " + str(counter) + ": " + i["name"])
 
 print("❤️ Proches connectés : " + str(len(proches_co)))
+
 for i in proches_co:
     print(i)
+
+
+def write_to_json(proches_co):
+    
+    with open("proches.json", "r+") as f:
+        f.truncate(0)
+    with open("proches.json", "w") as file:
+        json.dump(proches_co, file)
+
+write_to_json(proches_co)
