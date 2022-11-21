@@ -87,7 +87,7 @@ function check_employee_status(jsondata) {
 
 let employees_status = []
 
-const employes_co = fetch("../proches.json")
+const employes_co = fetch("https://edn0.github.io/TriadRecords/proches.json")
   .then(response => {
   return response.json();
 })
