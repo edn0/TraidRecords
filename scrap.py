@@ -19,7 +19,8 @@ employees = {
     "DEX":False,
     "edno":False,
     "Kops":False,
-    "laucl":False
+    "laucl":False,
+    "[Sécurité Triad Records] Kenzy":False
 
 }
 

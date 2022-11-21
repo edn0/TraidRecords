@@ -8,7 +8,8 @@ let employee_username = [
     "DEX",
     "edno",
     "Kops",
-    "laucl"
+    "laucl",
+    "[Sécurité Triad Records] Kenzy"
 ]
 
 let employee_names = [
@@ -16,11 +17,11 @@ let employee_names = [
     "Camelia G",
     "Dex Lightyear",
     "Ed' Know",
-
+    "Georges Lozano",
+    "Kenzy Parker",
     "Danzo Delaveras",
     "Le Loup",
     "Diego",
-    "Georges Lozano",
     "DJ Patate",
     "Dorès"
 ]
@@ -30,11 +31,11 @@ let employee_descriptions = [
     "Charbonneuse",
     "Real OG moulaga",
     "Edno multi-casquettes",
-
+    "Sorti de la jungle",
+    "La deter",
     "Le boug est sérieux",
     "Big W",
     "L'agent fou furieux",
-    "Sorti de la jungle",
     "s/o la patate douce",
     "La douceur"
 ]
@@ -44,11 +45,11 @@ let employee_titles = [
     "Co-Directrice",
     "Agent de sécurité",
     "Co-Directeur, Rappeur, DJ",
-
-    "Agent de Sécurité",
+    "Directeur artistique",
+    "Agent de sécurité",
+    "Agent de sécurité",
     "Rappeur",
     "Agent de sécurité",
-    "Directeur artistique",
     "DJ",
     "Rappeur"
 ]
@@ -58,25 +59,27 @@ let employee_photos = [
     "https://edn0.github.io/TriadRecords/img/employees/camelia.jpg",
     "https://edn0.github.io/TriadRecords/img/employees/dex.png",
     "https://edn0.github.io/TriadRecords/img/employees/edno.jpg",
-
+    "https://edn0.github.io/TriadRecords/img/employees/georges.PNG",
+    "https://edn0.github.io/TriadRecords/img/employees.kenzy.PNG",
     "https://edn0.github.io/TriadRecords/img/employees/danzo.jpg",
     "https://edn0.github.io/TriadRecords/img/employees/leloup.jpg",
     "https://edn0.github.io/TriadRecords/img/employees/diego.jpg",
-    "https://edn0.github.io/TriadRecords/img/employees/georges.PNG",
     "https://edn0.github.io/TriadRecords/img/employees/clement.PNG",
     "https://edn0.github.io/TriadRecords/img/employees/dores.PNG"
 
 
 ]
 
-function use_json(jsondata) {
-    console.log(jsondata);
+function check_employee_status(jsondata) {
+
     for (i in employee_username) {
-        if (Object.values(jsondata)[i] == true) { // Object.values creates a list from the json string
+
+        // Object.values creates a list from the json string
+        if (Object.values(jsondata)[i] == true) { 
 
             console.log(employee_names[i] + " is online.")
 
-            document.getElementsByClassName("employee_photo")[i].style.border = "4px solid rgb(0, 100, 0)"; // update la bordure en vert pour indiquer que l'employé est en ligne
+            document.getElementsByClassName("employee_photo")[i].classList.add("employee_online");
         }
     }
 
@@ -88,10 +91,9 @@ const employes_co = fetch("../proches.json")
   .then(response => {
   return response.json();
 })
- .then(jsondata => use_json(jsondata));//employees_status.push(jsondata));
+ .then(jsondata => check_employee_status(jsondata));
 
 
-console.log(employees_status);
 
 
 function display_employees() {
@@ -109,7 +111,6 @@ function display_employees() {
     }
 }
 
-console.log(employees_status[0]);
 
 class Employee {
     constructor(name, photo, title, description, status) {
