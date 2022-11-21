@@ -3,19 +3,25 @@ import time
 import json
 
 proches_name = {
+    "Guillaume Winshester":"Guigui",
     "edno":"Moi",
     "Le Zgaa":"Zga",
-    "Guillaume Winshester":"Guigui",
     "DEX":"Dex",
     "Kops":"Diego",
     "Uryuka":"Danzo",
-    "laucl":"Georges",
-    "(GOUV) [Chargé-Event] Synops Phala": "Synops" }
+    "laucl":"Georges" }
 
 proches_co = [] # list qui reçoit les noms personnalisés des collègues
 
+employees = {
+    "Guillaume Winshester":False,
+    "Camelia":False,
+    "DEX":False,
+    "edno":False,
+    "Kops":False,
+    "laucl":False
 
-
+}
 
 headers = {
     'authority': 'servers-frontend.fivem.net',
@@ -46,20 +52,22 @@ for i in data["Data"]["players"]:
     if any(i["name"] == c for c in proches_name):
         print("YOOOOOOOOOOOOOOOOOOOOOOOOOO")
         proches_co.append(proches_name[i["name"]])
+        employees[i["name"]] = True # sets the employee status to online
+
     # time.sleep(0.02)
-    print("🎮 " + "Joueur " + str(counter) + ": " + i["name"])
+    print(f"🎮 Joueur {str(counter)} : {i['name']}")
 
 print("❤️ Proches connectés : " + str(len(proches_co)))
 
 for i in proches_co:
     print(i)
 
-
-def write_to_json(proches_co):
+def write_to_json(employees):
     
     with open("proches.json", "r+") as f:
         f.truncate(0)
     with open("proches.json", "w") as file:
-        json.dump(proches_co, file)
+        json.dump(employees, file)
 
-write_to_json(proches_co)
+write_to_json(employees)
+
