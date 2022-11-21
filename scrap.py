@@ -12,7 +12,10 @@ proches_name = {
     "DEX":"Dex",
     "Kops":"Diego",
     "Uryuka":"Danzo",
-    "laucl":"Georges" }
+    "laucl":"Georges",
+    "[Sécurité Triad Records] Kenzy":"Kenzy",
+    "Evan Balaz":"Evan"
+    }
 
 proches_co = [] # list qui reçoit les noms personnalisés des collègues
 
@@ -23,8 +26,8 @@ employees = {
     "edno":False,
     "Kops":False,
     "laucl":False,
-    "[Sécurité Triad Records] Kenzy":False
-
+    "[Sécurité Triad Records] Kenzy":False,
+    "Evan Balaz":False
 }
 
 headers = {
@@ -61,10 +64,7 @@ for i in data["Data"]["players"]:
     # time.sleep(0.02)
     print(f"🎮 Joueur {str(counter)} : {i['name']}")
 
-print("❤️ Proches connectés : " + str(len(proches_co)))
 
-for i in proches_co:
-    print(i)
 
 def write_to_json(employees):
     
@@ -94,4 +94,9 @@ def check_arguments(argv):
 
 check_arguments(sys.argv[1:])
 
+print("")
+print("")
+print("❤️ Proches connectés : " + str(len(proches_co)))
 
+for i in proches_co:
+    print(i)
