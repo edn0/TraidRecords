@@ -88,8 +88,7 @@ def check_arguments(argv):
             os.system("git status")
             os.system("git add proches.json")
             os.system("git status")
-            msg = "Mise à jour automatiquer via Python"
-            os.system("git commit -m %s" %msg)
+            os.system("git commit -m 'majauto")
             os.system("git push origin main")
 
 
