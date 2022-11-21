@@ -88,7 +88,7 @@ function check_employee_status(jsondata) {
         }
 
         if (employees[i].status == true) {
-            document.getElementsByClassName("employee_photo")[i].classList.add("employee_online");
+            document.getElementsByClassName("employee_frame")[i].classList.add("employee_online");
         }
 
     }
