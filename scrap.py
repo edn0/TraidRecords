@@ -1,6 +1,9 @@
 import requests
 import time
 import json
+import sys, getopt
+import os
+
 
 proches_name = {
     "Guillaume Winshester":"Guigui",
@@ -71,4 +74,25 @@ def write_to_json(employees):
         json.dump(employees, file)
 
 write_to_json(employees)
+
+
+
+def check_arguments(argv):
+
+    opts, args = getopt.getopt(argv,":s")
+
+    for opt, arg in opts:
+        if opt == "-s":
+            print("Le contenu sera envoyé sur GitHub.")
+                        
+            os.system("git status")
+            os.system("git add proches.json")
+            os.system("git status")
+            msg = "Mise à jour automatiquer via Python"
+            os.system("git commit -m %s" %msg)
+            os.system("git push origin main")
+
+
+check_arguments(sys.argv[1:])
+
 
