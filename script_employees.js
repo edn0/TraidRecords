@@ -60,7 +60,7 @@ let employee_photos = [
     "https://edn0.github.io/TriadRecords/img/employees/dex.png",
     "https://edn0.github.io/TriadRecords/img/employees/edno.jpg",
     "https://edn0.github.io/TriadRecords/img/employees/georges.PNG",
-    "https://edn0.github.io/TriadRecords/img/employees.kenzy.PNG",
+    "https://edn0.github.io/TriadRecords/img/employees/kenzy.PNG",
     "https://edn0.github.io/TriadRecords/img/employees/danzo.jpg",
     "https://edn0.github.io/TriadRecords/img/employees/leloup.jpg",
     "https://edn0.github.io/TriadRecords/img/employees/diego.jpg",
