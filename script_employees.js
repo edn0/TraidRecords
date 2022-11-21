@@ -7,9 +7,9 @@ let employee_username = [
     "Camelia",
     "DEX",
     "edno",
-    "Kops",
     "laucl",
-    "[Sécurité Triad Records] Kenzy"
+    "[Sécurité Triad Records] Kenzy",
+    "Evan Balaz"
 ]
 
 let employee_names = [
@@ -82,10 +82,17 @@ function check_employee_status(jsondata) {
         if (Object.values(jsondata)[i] == true) { 
 
             console.log(employee_names[i] + " is online.")
+            employees[i].status = true;
 
+            
+        }
+
+        if (employees[i].status == true) {
             document.getElementsByClassName("employee_photo")[i].classList.add("employee_online");
         }
+
     }
+
 
 }
 
