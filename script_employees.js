@@ -7,7 +7,7 @@ let employee_username = [
     "Camelia",
     "DEX",
     "edno",
-    "laucl",
+    "Georges Lozano",
     "[Sécurité Triad Records] Kenzy",
     "Evan Balaz"
 ]
