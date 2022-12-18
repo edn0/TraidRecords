@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <title>Triad Records</title>
+
+  <meta charset="UTF-8" />
+
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+  <meta name="description" content="" />
+
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+
+  <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
+
+
+  <meta property="og:title" content="Triad Records" />
+  <meta property="og:type" content="website" />
+  <meta property="og:description" content="Site du Triad Records | Rencontrez le personnel du Triad !" />
+  <meta property="og:url" content="https://edn0.github.io/TriadRecords/agenda.html" />
+  <meta property="og:image" content="https://edn0.github.io/TriadRecords/img/bg.jpg" />
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+  <div id="header">
+
+    <div id="header_left">
+      
+      
+      <div id="header_left_top">
+        <a href="../index.html"><img id="logo" src="../img/logo_triad.png" height="180"></a>
+
+        
+      <div id="header_left_bottom">
+        <a class="page_link" href="../pages/employees.html">Staff</a>
+        <a class="page_link" href="../pages/gallery.html">Gallerie</a>
+        <a class="page_link" href="../pages/agenda.html">Agenda</a>
+        <a class="page_link" href="../pages/tarifs.html">Tarifs</a>
+        <a class="page_link" href="../pages/citoyens.html">Citoyens</a>
+
+      </div>
+
+      </div>
+
+  
+
+    </div>
+
+
+    <div id="header_right">
+
+      <a class="socials" href="https://discord.gg/kgz4hdQvDe">
+        <img src="../img/discord.png" height="32">
+        
+        Discord
+      </a>
+      </div>
+
+    </div>
+    <div id="employee_container">
+    <div class="citizen">
+
+
+    </div>
+  </div>
+
+  </div>
+  <script>
+
+
+    async function get_citoyens() {
+
+
+    let headers = {
+        'authority': 'servers-frontend.fivem.net',
+        'accept': '*/*',
+        'accept-language': 'fr-FR,fr;q=0.9,en-US;q=0.8,en;q=0.7',
+        'origin': 'https://shop.unityrp.io',
+        'referer': 'https://shop.unityrp.io/',
+        'sec-ch-ua': '"Chromium";v="106", "Google Chrome";v="106", "Not;A=Brand";v="99"',
+        'sec-ch-ua-mobile': '?0',
+        'sec-ch-ua-platform': '"Windows"',
+        'sec-fetch-dest': 'empty',
+        'sec-fetch-mode': 'cors',
+        'sec-fetch-site': 'cross-site',
+        'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36',
+    }
+
+    let url = "https://servers-frontend.fivem.net/api/servers/single/q8538p"
+    
+    let response = await fetch(url, headers=headers)
+
+    let data = await response.json();
+    console.log(data["Data"]["players"])
+    return data["Data"]["players"]
+
+    }
+
+
+    
+    
+    async function display_data() {
+    let fetched_data = await get_citoyens();
+    
+    for (c in await get_citoyens()) {
+        
+        let new_elt = document.createElement("div");
+
+        new_elt.classList.add("citizen");
+
+        console.log("/////")
+        console.log(fetched_data[c]["name"])
+        console.log("/////")
+
+        new_elt.innerHTML = fetched_data[c]["name"]
+        document.getElementsByClassName("citizen")[0].appendChild(new_elt);
+    }
+}
+
+
+    display_data()
+
+  </script>
+
+  </body>
+  </html>
