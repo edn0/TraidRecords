@@ -69,7 +69,8 @@
 
     </div>
     <div id="employee_container">
-    <div class="citizen">
+    <div class="citizen_wrapper">
+      <div class="citizen_container">Nous sommes<div id="total_players"></div>sur UnityRP</div>
 
 
     </div>
@@ -112,9 +113,10 @@
     
     async function display_data() {
     let fetched_data = await get_citoyens();
-    
+    let total_players = 0;
     for (c in await get_citoyens()) {
-        
+
+        total_players = total_players + 1;
         let new_elt = document.createElement("div");
 
         new_elt.classList.add("citizen");
@@ -124,8 +126,9 @@
         console.log("/////")
 
         new_elt.innerHTML = fetched_data[c]["name"]
-        document.getElementsByClassName("citizen")[0].appendChild(new_elt);
+        document.getElementsByClassName("citizen_wrapper")[0].appendChild(new_elt);
     }
+    document.getElementById("total_players").innerHTML = total_players;
 }
 
 

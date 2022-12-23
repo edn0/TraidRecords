@@ -395,9 +395,47 @@ a:hover {
     color: #5865F2;
 }
 
+
 .citizen {
     line-height: 2;
     background-color: rgba(255, 0, 0, 0.05);
     margin: 4px;
     text-align: center;
+
+}
+
+#total_players {
+    background: linear-gradient(to right, red, green, blue, purple, blueviolet);
+    background-size: 300%;
+    background-position: left;
+    --webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: come_in infinite 4s;
+    margin-bottom: 16px;
+    margin-top: 8px;
+    font-size: 42px;
+}
+
+@keyframes come_in {
+    50% {
+        background-size: 100%;
+        background-position: left;
+
+    }
+    100% {
+        background-size: 300%;
+        background-position: left;
+    }
+}
+
+.citizen_container {
+    text-align: center;
+    display: inline-block;
+}
+.citizen_wrapper{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between   ;
+    background-color: rgba(255, 0, 0, 0.08);
 }
