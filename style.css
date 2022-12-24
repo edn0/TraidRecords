@@ -405,7 +405,7 @@ a:hover {
 }
 
 #total_players {
-    background: linear-gradient(to right, red, green, blue, purple, blueviolet);
+    background: linear-gradient(to right, red, pink, blueviolet, purple, red);
     background-size: 300%;
     background-position: left;
     --webkit-background-clip: text;
